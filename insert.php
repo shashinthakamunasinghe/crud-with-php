@@ -1,5 +1,5 @@
 <?php
-    include("database.php");
+    //include("database.php");
 
     //Get form data
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -37,9 +37,18 @@
 </head>
 
 <body>
-    <form class="row g-3" method="POST">
-        <h3>Insert Student Details</h3>
+    
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Insert Student Details</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
 
+        <form class="row g-3" method="POST">
         <div class="col-md-4">
             <label for="firstname" class="form-label">First name</label>
             <input type="text" class="form-control" name="firstname" id="firstname" required>
@@ -84,11 +93,20 @@
                 </label>
             </div>
         </div>
-        <div class="col-12">
-            <a href="index.php"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button></a>
-            <input type="submit" class="btn btn-primary" value="Submit" >
-        </div>
+    
+         </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <input type="submit" class="btn btn-primary" value="Submit">
+      </div>
     </form>
+
+   </div>
+  </div>
+</div>
+
+
+    
 </body>
 
 </html>

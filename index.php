@@ -1,5 +1,6 @@
 <?php
 include_once("database.php");
+include ("insert.php");
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +21,10 @@ include_once("database.php");
     <div class="box1">
         <h3>Student Details</h3>
 
-        <a href='insert.php'><button type='button' class='btn btn-primary'>Add Student</button></a>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Add Student
+</button>
     </div>
 
     <?php
@@ -68,9 +72,6 @@ include_once("database.php");
     } else {
         echo "<tr><td>No records found</td></tr>";
     }
-    
-    // Include the modal form for updating student details
-    //include("update.php");
     ?>
 <?php
     // Close the database connection
