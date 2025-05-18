@@ -16,15 +16,15 @@ include("insert.php");
 </head>
 
 <body>
-    <h1 style="text-align: center; background:linear-gradient(to top right, #ffff99 0%, #ff9900 75%);; padding: 20px;">CRUD APPLICATION</h1>
+    <h1>CRUD APPLICATION</h1>
     <br>
-    <div class="box1" style="width: 100%; margin: 10;">
+    <div class="box1">
         <h3>Student Details</h3>
 
         <!-- Button trigger modal -->
-         <div class="btn-group" style="float:right; margin-right: 20px;">
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#insertStudentModal" >Add Student
-        </button></div>
+        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#insertStudentModal">
+            Add Student
+        </button>
     </div>
 
     <?php
