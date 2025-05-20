@@ -1,4 +1,5 @@
 var updateStudentModal = document.getElementById("updateStudentModal");
+if (updateStudentModal) {
 updateStudentModal.addEventListener("show.bs.modal", function (event) {
   var button = event.relatedTarget;
 
@@ -18,7 +19,8 @@ updateStudentModal.addEventListener("show.bs.modal", function (event) {
   document.getElementById("lastname").value = lastname;
   document.getElementById("address").value = address;
   document.getElementById("city").value = city;
-  document.getElementById("phone").value = phoneno;
+  document.getElementById("phoneno").value = phoneno;
   document.getElementById("email").value = email;
   document.getElementById("password").value = password;
 });
+}

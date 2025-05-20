@@ -121,7 +121,7 @@ include("insert.php");
                         </div>
 
                         <div class="col-md-6">
-                            <label for="phone" class="form-label">Phone no</label>
+                            <label for="phoneno" class="form-label">Phone no</label>
                             <input type="number" class="form-control" name="phoneno" id="phoneno" value="">
                         </div>
 
