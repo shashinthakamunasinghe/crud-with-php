@@ -20,6 +20,7 @@ include("insert.php");
         CRUD APPLICATION
     </h1>
     <br>
+   
     <div class="box1 d-flex justify-content-between align-items-center">
         <h3>Student Details</h3>
         <!-- Button trigger modal -->
