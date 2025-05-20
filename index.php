@@ -12,17 +12,23 @@ include("insert.php");
     <title>CRUD Application</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/crud.css">
+    <link rel="stylesheet" href="css/crud.css">
 </head>
 
 <body>
-    <h1>CRUD APPLICATION</h1>
+    <h1>
+        CRUD APPLICATION
+    </h1>
     <br>
-    <div class="box1">
+    <div class="box1 d-flex justify-content-between align-items-center">
         <h3>Student Details</h3>
-
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#insertStudentModal">
+        <button type="button" class="btn btn-success addbtn" data-bs-toggle="modal" data-bs-target="#insertStudentModal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="white" class="bi bi-person-plus me-2" viewBox="0 0 16 16">
+                <path d="M8 7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                <path d="M13 8a.5.5 0 0 1 .5.5V10h1.5a.5.5 0 0 1 0 1H13.5v1.5a.5.5 0 0 1-1 0V11H11a.5.5 0 0 1 0-1h1.5V8.5A.5.5 0 0 1 13 8z"/>
+                <path d="M7 13c-2.33 0-7 1.17-7 3.5V16h14v-.5C14 14.17 9.33 13 7 13z"/>
+            </svg>
             Add Student
         </button>
     </div>
@@ -34,7 +40,7 @@ include("insert.php");
     if (mysqli_num_rows($result) > 0) {
 
         echo '
-            <table class="table table-hover">
+            <table class="table table-hover tablestyle">
                 <thead class ="table-secondary">   
                     <tr>
                         <th>Id</th>
